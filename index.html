@@ -283,9 +283,124 @@
    <div class="to-top position-fixed">
      <a href="#banner"><i class="bi bi-arrow-up scroll-top-btn px-3 py-2 rounded"></i></a>
    </div>
+
+
+   <!-- Coming Soon Popup -->
+<div id="comingSoonOverlay" class="cs-overlay" aria-hidden="true" role="dialog" aria-labelledby="cs-title" aria-modal="true">
+  <div class="cs-popup" role="document">
+    <button class="cs-close" id="cs-closeBtn" aria-label="Close popup">&times;</button>
+    <h2 id="cs-title">I’m still designing this site</h2>
+    <p class="cs-message">
+      Exciting things are coming soon. Thanks for visiting — come back soon or connect with me on <a href="https://www.linkedin.com/in/udaymayanna" target="_blank" rel="noopener">LinkedIn</a>.
+    </p>
+  </div>
+</div>
+
+<style>
+  :root {
+    --cs-overlay-bg: rgba(0, 0, 0, 0.6);
+    --cs-popup-bg: white;
+    --cs-accent: #0b72ff; /* change this to your link/accent color */
+    --cs-text: #222; /* dark text color matching your headings/body text */
+    --cs-radius: 8px;
+    --cs-font-family: 'Roboto', sans-serif; /* or whatever font you’re using */
+  }
+
+  .cs-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cs-overlay-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .cs-overlay[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .cs-popup {
+    background: var(--cs-popup-bg);
+    color: var(--cs-text);
+    font-family: var(--cs-font-family);
+    padding: 24px;
+    border-radius: var(--cs-radius);
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .cs-popup h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  .cs-popup .cs-message {
+    font-size: 1rem;
+    margin: 16px 0;
+  }
+  .cs-popup .cs-message a {
+    color: var(--cs-accent);
+    text-decoration: none;
+  }
+  .cs-popup .cs-message a:hover {
+    text-decoration: underline;
+  }
+
+  .cs-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--cs-text);
+  }
+  .cs-close:hover {
+    color: var(--cs-accent);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.getElementById('comingSoonOverlay');
+    const closeBtn = document.getElementById('cs-closeBtn');
+
+    function closePopup() {
+      overlay.setAttribute('aria-hidden', 'true');
+    }
+
+    closeBtn.addEventListener('click', closePopup);
+
+    // Close on ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closePopup();
+      }
+    });
+
+    // Optional: close when clicking outside the popup content
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        closePopup();
+      }
+    });
+  });
+</script>
+
 </body>
 <script src="mobile-nav-toggle.js"></script>
 <script src ="stack_selector.js"></script>
 </html>
+
 
 
