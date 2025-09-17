@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const item_selected_index = item.getAttribute("data-stack-item");
       switch(item_selected_index){
         case "1":
-          stack_selected.src="/assets/images/java-logo.png";
+          stack_selected.src="java-logo.png";
           break;
         case "2":
-          stack_selected.src="/assets/images/angularjs.png";
+          stack_selected.src="angularjs.png";
           break;
         case "3":
           stack_selected.src="/assets/images/html-5.png";
@@ -63,3 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
