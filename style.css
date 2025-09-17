@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.custom-color{
+  color: #c400ff;
+}
+body{
+    background-color: #000 !important;  
+}
+h1,h2,h3,h4,h5,h6,li,a,span,p{
+    font-family: monospace;
+}
+.header{
+    border-bottom: 1px solid #c400ff;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar li a{
+    color: #fff;  
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.banner-text{
+    font-size: 72px;
+}
+.banner{
+    height: 100vh;
+    align-content: center;
+}
+.banner-text span{
+    color: #c400ff;
+}
+.banner-designation{
+    font-size: 22px;
+}
+.eduction-box,.project-box{
+    background-color: #ffffff14;
+    border: 2px solid #a48fa417;
+}
+.eduction-box h5,.project-box h5{
+    border-bottom: 2px solid #a48fa417;
+}
+.experience h5{
+    border-bottom: 2px solid #a48fa417;
+    border-top: 2px solid #a48fa417;
+}
+h2.section-heading{
+    font-size: 44px;
+}
+.skill-box-text p {
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: #ffffff14;
+    border: 2px solid #a48fa417;
+    cursor: pointer;
+}
+.skill-box-icon{
+    background-color: #ffffff14;
+    border: 2px solid #a48fa417;
+}
+.active-stack{
+    background-color: #c400ff !important;
+}
+.scroll-next-btn{
+    color: #c400ff;
+    font-size: 22px;
+    animation: bounce 1.5s infinite;
+}
+.scroll-top-btn{
+    background-color: #c400ff;
+    color: #fff;
+    font-size: 22px;
+    animation: bounce 1.5s infinite;
+}
+.social-media a{
+    color: #fff;
+}
+.social-media a:hover,.navbar a:hover{
+    color: #c400ff;
+    transition: all 0.5s ease-in-out;
+}
+ul.second-level-menu a{
+    color: #fff !important;
+}
+
+.projects-container{
+    height: 100vh;
+    width: fit-content;
+    overflow-y: auto;
+}
+.mobile-navbar i,i#mobile-toggle-off {
+    font-size: 30px;
+}
+body.menu-open {
+    overflow: hidden;
+}
+  
+.mobile-menu-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #c400ff;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+ }
+  
+.mobile-menu-list.active {
+    right: 0;
+}
+footer .container {
+    background-color: #b0b0b029;
+    border: 2px solid #495057;
+}
+.to-top{
+    right: 10px;
+    bottom: 20px;
+    
+}
+div#header {
+    position: fixed;
+    background: #000;
+    z-index: 9999;
+}
+@keyframes bounce {
+   0%,100%{
+      transform: translateY(0);
+   }
+   50%{
+   transform: translateY(-10px);
+   }
+   
+}
+@media (max-width:525px){
+    .banner-text {
+        font-size: 32px;
+    }
+}

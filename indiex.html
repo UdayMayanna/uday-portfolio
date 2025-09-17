@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+   <!-- <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"> -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+</head>
+
+<body>
+   <div class="container-fluid p-sm-2 header" id="header">
+      <div class="navbar d-none d-sm-block">
+         <ul class="m-0 d-none d-sm-block">
+            <li><a href="#banner">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </div>
+      <div class="mobile-navbar d-sm-none overflow-hidden">
+         <div class="text-end">
+            <i class="bi bi-list custom-color" id="mobile-toggle-on"></i>
+         </div>
+      </div>
+
+      <div class="position-fixed p-3 mobile-menu-list" id="mobile-menu-list">
+         <ul class="p-0 m-0 list-unstyled">
+            <li class="text-end"><i class="bi bi-x text-white" id="mobile-toggle-off"></i></li>
+            <li><a href="#banner" class="text-white text-decoration-none">About Me</a></li>
+            <li><a href="#education" class="text-white text-decoration-none">Education</a></li>
+            <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+            <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+            <li><a href="#experience" class="text-white text-decoration-none">Experince</a></li>
+            <li><a href="#resume" class="text-white text-decoration-none">Resume</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="banner container position-relative" id="banner">
+      <div class="row">
+         <div class="col-sm-2 d-flex flex-sm-column justify-content-center px-4 text-white social-media">
+            <p class="px-2"><a href="#"><i class="bi bi-instagram"></i></a></p>
+            <p class="px-2"><a href="#"><i class="bi bi-linkedin"></i></a></p>
+            <p class="px-2"><a href="#"><i class="bi bi-github"></i></a></p>
+            <p class="px-2"><a href="#"><i class="bi bi-whatsapp"></i></a></p>
+         </div>
+         <div class="col-sm-10">
+            <h1 class="text-white banner-text text-center text-sm-start" id="welcome-text">
+               Hello,I am <span class="fw-bold">Uday Mayanna.</span><br>
+               Welcome to My world.....
+            </h1>
+            <p class="text-white banner-designation text-center text-sm-start">Web Developer / Java Full-Stack
+               Developer.</p>
+         </div>
+      </div>
+      <a href="#education"><i
+            class="bi bi-chevron-down position-absolute bottom-0 start-50 end-50 scroll-next-btn"></i></a>
+   </div>
+
+   <div class="education container py-4" id="education">
+      <h2 class="text-center text-white py-4 fw-bolder section-heading">Education Background</h2>
+      <div class="row gy-4">
+         <div class="col-sm-4">
+            <div class="eduction-box rounded p-3 text-white">
+               <h5 class="pb-3">B.Tech in CSE</h5>
+               <p>Completed Graduation from SITCOE, Yadrav, Ichalkaranji in year 2024</p>
+               <p>Course : Computer Science Engineering</p>
+               <p>CGPA : 8.13</p>
+               <a class="text-decoration-none custom-color" href="#">Mark Sheets</a>
+            </div>
+         </div>
+
+         <div class="col-sm-4">
+            <div class="eduction-box rounded p-3 text-white">
+               <h5 class="pb-3">SSC (Board)</h5>
+               <p>Completed SSC from PVDP School, Palus, Sangli in year 2018</p>
+               <p>Course : Computer Science</p>
+               <p>Percentage : 76.46</p>
+               <a class="text-decoration-none custom-color" href="#">Mark Sheet</a>
+            </div>
+         </div>
+
+         <div class="col-sm-4">
+            <div class="eduction-box rounded p-3 text-white">
+               <h5 class="pb-3">HSC (Board)</h5>
+               <p>Completed HSC from PVDP Jr. Collage, Palus, Sangli in year 2020</p>
+               <p>Course : Marathi Medium (Maharashtra Board)</p>
+               <p>Percentage : 82.60</p>
+               <a class="text-decoration-none custom-color" href="#">Mark Sheet</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="skills container py-4" id="skills">
+      <h2 class="text-center text-white py-4 fw-bolder section-heading">Skills</h2>
+      <div class="row">
+         <div class="col-sm-6 p-3 d-flex text-white flex-wrap gap-2 skill-box-text">
+              <table class="table table-responsive stack-table m-0 table-dark">
+                <tbody>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item active-stack" data-stack-item="1">Java</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="2">Angular</p></td>
+                   </tr>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="3">HTML</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="4">CSS</p></td>
+                   </tr>
+                    <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="5">Bootstrap</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="6">Javascript</p></td>
+                   </tr>
+                    <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="7">WordPress</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="8">MySQL</p></td>
+                   </tr>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="9">Database</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="10">C</p></td>
+                   </tr>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="11">Hibernate</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="12">Spring</p></td>
+                   </tr>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="13">SpringBoot</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="14">JDBC</p></td>
+                   </tr>
+                   <tr>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="15">Postman</p></td>
+                     <td><p class="m-0 text-center stack-item" data-stack-item="16">OOP's</p></td>
+                   </tr>
+                </tbody>
+            </table>
+         </div>
+         <div class="col-sm-6 skill-box-icon rounded d-flex justify-content-center align-items-center">
+            <img id="stack-selected" src="assets/images/java-logo.png">
+         </div>
+      </div>
+   </div>
+
+   <div class="projects container py-4" id="projects">
+      <h2 class="text-center text-white py-4 fw-bolder section-heading">Projects</h2>
+      <div class="row">
+         <div class="col-sm-12  projects-container">
+            <div class="project-box text-white p-3 rounded my-4">
+               <h5 class="pb-3">Project Name : Project</h5>
+               <div class="d-flex flex-column flex-sm-row">
+                  <div class="col-sm-4 p-3">
+                     <img src="assets/images/banner-img.jpg" class="img-fluid rounded" alt="">
+                  </div>
+                  <div class="project-meta p-3">
+                     <p>Project Title : Name</p>
+                     <p>Tech Stack : Angular</p>
+                     <p>Duration of Project : 2 Days</p>
+                     <p>Github Link : <a href="#" class="custom-color text-decoration-none">Github Project Link</a></p>
+                     <p>Key Features</p>
+                     <p>Live Demo : <a href="#" class="custom-color text-decoration-none">Live Link</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="project-box text-white p-3 rounded my-4">
+               <h5 class="pb-3">Project Name : Project</h5>
+               <div class="d-flex flex-column flex-sm-row">
+                  <div class="col-sm-4 p-3">
+                     <img src="assets/images/banner-img.jpg" class="img-fluid rounded" alt="">
+                  </div>
+                  <div class="project-meta p-3">
+                     <p>Project Title : Name</p>
+                     <p>Tech Stack : Angular</p>
+                     <p>Duration of Project : 2 Days</p>
+                     <p>Github Link : <a href="#" class="custom-color text-decoration-none">Github Project Link</a></p>
+                     <p>Key Features</p>
+                     <p>Live Demo : <a href="#" class="custom-color text-decoration-none">Live Link</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="project-box text-white p-3 rounded my-4">
+               <h5 class="pb-3">Project Name : Project</h5>
+               <div class="d-flex flex-column flex-sm-row">
+                  <div class="col-sm-4 p-3">
+                     <img src="assets/images/banner-img.jpg" class="img-fluid rounded" alt="">
+                  </div>
+                  <div class="project-meta p-3">
+                     <p>Project Title : Name</p>
+                     <p>Tech Stack : Angular</p>
+                     <p>Duration of Project : 2 Days</p>
+                     <p>Github Link : <a href="#" class="custom-color text-decoration-none">Github Project Link</a></p>
+                     <p>Key Features</p>
+                     <p>Live Demo : <a href="#" class="custom-color text-decoration-none">Live Link</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="experience container py-4" id="experience">
+      <h2 class="text-center text-white py-4 fw-bolder section-heading">Experience</h2>
+      <div class="row">
+         <div class="col-sm-4 text-white">
+            <div class="p-2">
+               <h4 class="custom-color pb-1">Work Experience</h4>
+               <h5 class="text-white py-3"> <span class="custom-color">01.</span> Walstar Technologies</h6>
+                  <p>Designation : Trainee Enginner</p>
+                  <p>Joining Date : 27 August 2024</p>
+                  <p>Tech Stack : WordPress ,Bootstrap, HTML, CSS, Javascript, SQL.</p>
+            </div>
+         </div>
+         <div class="col-sm-4 text-white">
+            <div class="p-2">
+               <h4 class="custom-color pb-1">Industrial Training</h4>
+               <h5 class="text-white py-3"> <span class="custom-color">01.</span>Edubrige & Capgemini Collage Connect
+                  </h6>
+                  <p>Designation : Trainee</p>
+                  <p>Joining Date : 27 August 2024</p>
+                  <p>Tech Stack : Java, Hibernate, Springboot, MySQL, HTML, CSS, Javascript, Angular, Postman.</p>
+            </div>
+            <div class="p-2">
+               <h5 class="text-white py-3"> <span class="custom-color">02.</span>Zensar Technologies</h6>
+                  <p>Designation : Trainee</p>
+                  <p>Joining Date : 27 August 2024</p>
+                  <p>Tech Stack : SQL, Python</p>
+            </div>
+         </div>
+         <div class="col-sm-4 text-white">
+            <div class="p-2">
+               <h4 class="custom-color pb-1">Internships</h4>
+               <h5 class="text-white py-3"> <span class="custom-color">01.</span>Stromsoft Technologies</h6>
+                  <p>Designation : Web Intern</p>
+                  <p>Joining Date : 27 August 2024</p>
+                  <p>Tech Stack : HTML, CSS, WordPress</p>
+            </div>
+            <div class="p-2">
+               <h5 class="text-white py-3"> <span class="custom-color">02.</span>Zensar Technologies</h6>
+                  <p>Designation : Trainee</p>
+                  <p>Joining Date : 27 August 2024</p>
+                  <p>Tech Stack : SQL, Python</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer class="px-2 px-sm-0" id="contact">
+      <div class="text-white container rounded mb-2">
+         <div class="row">
+            <div class="col-sm-4 p-3">
+               <h3 class="custom-color">Address</h3>
+               <p>A/P Laxmiwadi,<br> Hatakanangle, Kolhapur,<br>
+                  Maharashtra ,416119.</p>
+            </div>
+            <div class="col-sm-4 p-3">
+               <h3 class="custom-color">Contact</h3>
+               <p><i class="bi bi-phone"></i> Phone 1 : <a href="tel:8379994325" class="text-decoration-none text-white">+91-8379994325</a> </p>
+               <p><i class="bi bi-phone"></i> Phone 2 : <a href="tel:8310982198" class="text-decoration-none text-white">+91-8310982198</a> </p>
+               <p><i class="bi bi-envelope-at"></i> Email : <a href="mailto:mayannauday9@gmail.coom" class="text-decoration-none text-white">mayannauday9@gmail.coom</a> </p>
+            </div>
+            <div class="col-sm-4 p-3">
+               <h3 class="custom-color">Address</h3>
+               <p>A/P Laxmiwadi,<br> Hatakanangle, Kolhapur,<br>
+                  Maharashtra ,416119.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="to-top position-fixed">
+     <a href="#banner"><i class="bi bi-arrow-up scroll-top-btn px-3 py-2 rounded"></i></a>
+   </div>
+</body>
+<script src="./assets/js/mobile-nav-toggle.js"></script>
+<script src ="./assets/js/stack_selector.js"></script>
+</html>
